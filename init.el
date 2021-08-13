@@ -57,8 +57,8 @@ This function should only modify configuration layer settings."
 
      ;; https://develop.spacemacs.org/layers/+lang/clojure/README.html
      (clojure :variables
-              ;; clojure-backend 'cider               ;; use cider and disable lsp
-              ;; clojure-enable-linters 'clj-kondo    ;; clj-kondo included in lsp
+              clojure-backend 'cider               ;; use cider and disable lsp
+              clojure-enable-linters 'clj-kondo    ;; clj-kondo included in lsp
               cider-repl-display-help-banner nil      ;; disable help banner
               cider-pprint-fn 'fipp                   ;; fast pretty printing
               clojure-indent-style 'align-arguments
@@ -438,7 +438,7 @@ It should only modify the values of Spacemacs settings."
    ;; a non-negative integer (pixel size), or a floating-point (point size).
    ;; Point size is recommended, because it's device independent. (default 10.0)
    dotspacemacs-default-font '("Fira Code"
-                               :size 12.0
+                               :size 14.0
                                :weight normal
                                :width normal)
 
