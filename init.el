@@ -101,6 +101,7 @@ This function should only modify configuration layer settings."
      ;; Used to generated graphs of Clojure project dependencies
      ;; https://develop.spacemacs.org/layers/+lang/graphviz/README.html
      graphviz
+     groovy
 
      ;; helm-follow-mode sticky - remembers use of C-c C-f
      ;; - follow mode previews when scrolling through a helm list
@@ -108,6 +109,7 @@ This function should only modify configuration layer settings."
            helm-follow-mode-persistent t)
 
      html
+     (java :variables java-backend 'lsp)
      javascript
      json
 
@@ -176,6 +178,9 @@ This function should only modify configuration layer settings."
           org-journal-time-format ""
           org-journal-carryover-items "TODO=\"TODO\"|TODO=\"DOING\"|TODO=\"BLOCKED\"|TODO=\"REVIEW\"")
 
+     pandoc
+
+     (python :variables python-backend 'lsp)
 
      ;; Text-based file manager with preview - SPC a t r r
      (ranger :variables
